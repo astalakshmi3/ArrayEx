@@ -1,5 +1,6 @@
 package astalakshmi.example;
 
+import java.sql.Array;
 import java.util.*;
 public class ArrayExe {
     public static void main(String[] args) {
@@ -29,6 +30,7 @@ public class ArrayExe {
         exercise12();
         System.out.println("Exercise 13");
         exercise13();
+        ex();
     }
 
     // Exercise 1 : Store and print array elements
@@ -184,4 +186,14 @@ public class ArrayExe {
         System.out.println("Original : " + Arrays.toString(arr));
         System.out.println("Odd / Even separated : " + Arrays.toString(result));
     }
+    public static void ex ()
+    {
+        int [] arr = {10,20,30};
+        int [] newArr = Arrays.copyOf(arr, arr.length + 1);
+        int newElement = 5;
+        newArr[newArr.length-1] = newElement;
+        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(newArr));
+    }
+
 }
